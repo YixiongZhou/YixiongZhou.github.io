@@ -9,19 +9,43 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <h1 id="welcomeMessage">Greetings, anonymous. </h1>
+        <button onclick="promptName()">Click here to tell me your name</button>
+    </header>
 
-    <dl>
+    <hr>
+
+    <!-- Navigation -->
+    <ul class="navbar">
+        <li><a href="index.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</a></li>
+        <li class="dropdown" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <a href="#" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="subpage1.html">Subpage 1</a>
+                <a href="subpage2.html">Subpage 2</a>
+            </div>
+        </li>
+        <li><a href="page1.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Page 1</a></li>
+        <li><a href="page2.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Page 2</a></li>
+    </ul>
+
+    <!-- JavaScript -->
+    <script src="JavaScript.js"></script>
+
+    <hr>
+
+    <!-- Personal Information -->
+    <dl class="personal-info">
         <div class="info-block">
+            <img id="myImage" src="selfie.jpg" alt="My Photo" onclick="zoomIn()" style="width: 200px;">
             <dt><h3>My Name</h3></dt>
             <dd><h5>Yixiong Zhou</h5></dd>
-        </div>
-        <hr>
-        <div class="info-block">
+            <hr>
             <dt><h3>Age</h3></dt>
             <dd><h5>23</h5></dd>
-        </div>
-        <hr>
-        <div class="info-block">
+            <hr>
             <dt><h3>Gender</h3></dt>
             <dd><h5>Male</h5></dd>
         </div>
@@ -29,58 +53,62 @@
 
     <hr>
 
+    <!-- Education -->
     <div class="link-container">
         <table>
-            <tr>
-                <th>School</th>
-                <th>Duration</th>
-            </tr>
-            <tr>
-                <td><a href="https://stephenleacockci.ca/">Stephen Leacock Collegiate Institute</a></td>
-                <td>2016-2018</td>
-            </tr>
-            <tr>
-                <td><a href="https://elpiscollege.ca/">Elpis College</a></td>
-                <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.torontomu.ca/">Ryerson University</a></td>
-                <td>2020-2022</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></td>
-                <td>2022-present</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://stephenleacockci.ca/">Stephen Leacock Collegiate Institute</a></td>
+                    <td>2016-2018</td>
+                </tr>
+                <tr>
+                    <td><a href="https://elpiscollege.ca/">Elpis College</a></td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.torontomu.ca/">Ryerson University</a></td>
+                    <td>2020-2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></td>
+                    <td>2022-present</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
     <hr>
 
+    <!-- Program -->
     <div class="section">
         <h2>My Program</h2>
-        <hr>
         <div class="program-container">
-            <h4><dt>Business Technology Management</dt></h4>
-            <dd>Tech and business studies at TMU. Analyze needs, design solutions, and drive tech-informed strategies</dd>
+            <h4>Business Technology Management</h4>
+            <p>Tech and business studies at TMU. Analyze needs, design solutions, and drive tech-informed strategies</p>
         </div>
-        <hr>
     </div>
 
+    <!-- Education Awards -->
     <div class="section">
         <h1>My Education Awards</h1>
         <ul>
             <li><h2>NONE</h2></li>
         </ul>
-        <hr>
     </div>
 
+    <!-- Extracurricular Activity -->
     <div class="section">
         <h1>Extracurricular Activity</h1>
         <ul>
             <li><dt><h3>None</h3></dt></li>
             <dd>Reason: I am an introvert, and online school made me lose many opportunities to join activities.</dd>
         </ul>
-        <hr>
     </div>
 
 </body>

@@ -62,13 +62,45 @@ td {
 }
 
 .program-container,
-.course-container,
-.info-block {
+.course-container{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.info-block dt {
-    font-size: 18pt;
-    color: #009933;
+.info-block {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
+
+#myImage {
+    width: 100px;
+    float: right;
+    margin-left: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    position: relative; 
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar li a:hover {
+    background-color: #c45555;
+}
+
