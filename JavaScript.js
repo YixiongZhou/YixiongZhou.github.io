@@ -55,3 +55,37 @@ dropdowns.forEach(function(dropdown) {
         this.querySelector('.dropdown-content').style.display = "none";
     });
 });
+
+var form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    var fullName = form.elements["fullName"].value;
+    var email = form.elements["email"].value;
+    var phone = form.elements["phone"].value;
+    var gender = form.elements["gender"].value;
+    var languages = [];
+    form.querySelectorAll("input[name='language']:checked").forEach(function(input) {
+        languages.push(input.value);
+    });
+    var message = form.elements["message"].value;
+    var source = form.elements["source"].value;
+
+    localStorage.setItem("fullName", fullName);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
+    localStorage.setItem("gender", gender);
+    localStorage.setItem("languages", JSON.stringify(languages));
+    localStorage.setItem("message", message);
+    localStorage.setItem("source", source); 
+
+    alert("Form submitted successfully!");
+
+    form.reset();
+});
+
+var clearButton = form.querySelector("button[type='reset']");
+clearButton.addEventListener("click", function() {
+    localStorage.clear();
+});

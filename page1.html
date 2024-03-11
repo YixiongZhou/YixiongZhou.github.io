@@ -2,24 +2,78 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yixiong Zhou website</title>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1 id="welcomeMessage">Greetings, anonymous. </h1>
+        <button onclick="promptName()">Click here to tell me your name</button>
     </header>
 
-    <main>
-        <section>
-            <p>This page is under construction.</p>
-            <p><a href="index.html">Back to Home</a></p>
-        </section>
-    </main>
+    <ul class="navbar">
+        <li><a href="index.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</a></li>
+        <li class="dropdown" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <a href="#" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="subpage1.html">Subpage 1</a>
+                <a href="subpage2.html">Subpage 2</a>
+            </div>
+        </li>
+        <li><a href="page1.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Form</a></li>
+        <li><a href="page2.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Page 2</a></li>
+    </ul>
 
+    <h1>Contact Form</h1>
+    <form id="contactForm" onsubmit="submitForm(); return false;" onreset="clearForm();">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <h2>Gender</h2>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <h2>Languages Spoken</h2>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="mandarin" name="language" value="mandarin">
+        <label for="mandarin">Mandarin</label>
+        <input type="checkbox" id="french" name="language" value="french">
+        <label for="french">French</label><br>
+
+        <h2>How did you hear about this website?</h2>
+        <select id="source" name="source">
+            <option value="search">None</option>
+            <option value="search">Search engine</option>
+            <option value="social">Social media</option>
+            <option value="referral">Referral</option>
+            <option value="direct">Direct visit</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <script src="JavaScript.js"></script>
 </body>
 
 </html>

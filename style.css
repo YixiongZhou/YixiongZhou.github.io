@@ -1,24 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #d7f3e2;
-    color: #2f4e44;
+    background-color: #ddfbff;
+    color: #333;
     margin: 15pt;
 }
 
 h1 {
     font-size: 24pt;
-    color: #3366cc;
+    color: #1e90ff;
 }
 
 h2 {
     font-size: 18pt;
-    color: #009933;
+    color: #228b22;
 }
 
 h3 {
     font-size: 16pt;
-    color: #ff9900;
+    color: #ff6347;
 }
 
 p {
@@ -32,12 +32,12 @@ a {
 }
 
 a:hover {
-    color: #a200ff;
+    color: #8a2be2;
     text-decoration: underline;
 }
 
 a:active {
-    color: #990000;
+    color: #b22222;
 }
 
 a:visited {
@@ -62,7 +62,7 @@ td {
 }
 
 .program-container,
-.course-container{
+.course-container {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -104,3 +104,90 @@ td {
     background-color: #c45555;
 }
 
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3366cc;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="reset"] {
+    margin-left: 10px;
+    background-color: #ff3300;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #003366;
+}
+
+input:invalid {
+    border-color: #ff0000;
+}
+
+input:valid {
+    border-color: #00cc00;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+label[for="male"],
+label[for="female"] {
+    display: inline-block;
+    margin-right: 15px; 
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+label[for="english"],
+label[for="mandarin"],
+label[for="french"] {
+    display: inline-block;
+    margin-right: 15px; 
+}
