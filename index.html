@@ -27,8 +27,11 @@
                 <a href="subpage2.html">Subpage 2</a>
             </div>
         </li>
-        <li><a href="page1.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Form</a></li>
+        <li><a href="form.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Form</a></li>
         <li><a href="page2.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Page 2</a></li>
+        <li><button onclick="toggleColorBlindMode()">ColorBlindMode</button></li>
+        <li><button onclick="changeFontSize(-2)">FontSize-</button></li>
+        <li><button onclick="changeFontSize(2)">FontSize+</button></li>
     </ul>
 
     <!-- JavaScript -->
@@ -39,7 +42,7 @@
     <!-- Personal Information -->
     <dl class="personal-info">
         <div class="info-block">
-            <img id="myImage" src="selfie.jpg" alt="My Photo" onclick="zoomIn()" style="width: 200px;">
+            <img id="myImage" src="selfie.jpg" alt="A Photo of Me" onclick="zoomIn()" style="width: 200px;">
             <dt><h3>My Name</h3></dt>
             <dd><h5>Yixiong Zhou</h5></dd>
             <hr>
@@ -106,7 +109,7 @@
     <div class="section">
         <h1>Extracurricular Activity</h1>
         <ul>
-            <li><dt><h3>None</h3></dt></li>
+            <li><dt><h3>NONE</h3></dt></li>
             <dd>Reason: I am an introvert, and online school made me lose many opportunities to join activities.</dd>
         </ul>
     </div>

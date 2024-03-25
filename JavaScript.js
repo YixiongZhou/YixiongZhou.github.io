@@ -89,3 +89,15 @@ var clearButton = form.querySelector("button[type='reset']");
 clearButton.addEventListener("click", function() {
     localStorage.clear();
 });
+
+function toggleColorBlindMode() {
+    document.body.classList.toggle('colorblind-mode');
+}
+
+function changeFontSize(multiplier) {
+    var htmlElement = document.documentElement;
+    var currentSize = parseFloat(window.getComputedStyle(htmlElement).fontSize);
+    var newSize = currentSize + multiplier * 2; 
+    htmlElement.style.fontSize = newSize + 'px';
+}
+
