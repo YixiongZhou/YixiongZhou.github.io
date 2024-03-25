@@ -207,8 +207,8 @@ input:valid {
 .colorblind-mode button[type="submit"],
 .colorblind-mode button[type="reset"],
 .colorblind-mode .navbar li button {
-    background-color: #FDFDFD;
-    color: #000000;
+    background-color: #474747;
+    color: #ffffff;
 }
 
 .colorblind-mode button[type="submit"]:hover,
@@ -219,7 +219,7 @@ input:valid {
 .navbar li button {
     background: none;
     border: none;
-    color: #333;
+    color: #000000;
     padding: 0.625rem;
     text-align: center;
     text-decoration: none;
@@ -231,5 +231,5 @@ input:valid {
 }
 
 .navbar li button:hover {
-    background-color: #575757;
+    background-color: #333333;
 }
